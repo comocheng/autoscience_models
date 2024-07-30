@@ -6,7 +6,6 @@ thermo_libs = [
 ]
 
 kinetic_libs = [
-    'BurkeH2O2inArHe',
     'BurkeH2O2inN2',
     'harris_butane',
 ]
