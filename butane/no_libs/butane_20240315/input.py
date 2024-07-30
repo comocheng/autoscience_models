@@ -3,11 +3,9 @@
 thermo_libs = [
     'BurkeH2O2',
     'primaryThermoLibrary',
-#    'harris_butane',
 ]
 
 kinetic_libs = [
-    'BurkeH2O2inArHe',
     'BurkeH2O2inN2',
     'harris_butane',
 ]
@@ -15,8 +13,7 @@ kinetic_libs = [
 database(
     thermoLibraries = thermo_libs,
     reactionLibraries = kinetic_libs,
-#    seedMechanisms = ['BurkeH2O2inN2','BurkeH2O2inArHe'],  # added BurkeH2O2inAr and BurkeH2O2inN2 for bath gases
-    seedMechanisms = ['BurkeH2O2inN2','BurkeH2O2inArHe', 'harris_butane'],  # added BurkeH2O2inAr and BurkeH2O2inN2 for bath gases
+    seedMechanisms = ['BurkeH2O2inN2', 'harris_butane'],
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
     kineticsEstimator = 'rate rules',
